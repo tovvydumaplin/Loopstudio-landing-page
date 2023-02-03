@@ -1,0 +1,268 @@
+/* 1392px */
+@media (max-width: 87em) {
+  .section-hero .heading-primary {
+    width: 75%;
+    font-size: 8rem;
+  }
+
+  .heading-secondary {
+    font-size: 5rem;
+  }
+
+  .leader-text-box {
+    padding: 4rem 0 0 6rem;
+  }
+  .img-text {
+    font-size: 2.5rem;
+    padding: 3rem 5rem 3rem 3rem;
+  }
+}
+
+/* 995px */
+@media (max-width: 62.19em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .section-hero .heading-primary {
+    width: 75%;
+    font-size: 6.5rem;
+    padding: 4rem 7rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .leader-text-box .heading-secondary {
+    margin-bottom: 2rem;
+  }
+  .leader-text-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .btn-creation:link,
+  .btn-creation:visited {
+    padding: 1.5rem 5rem;
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+  .copyright {
+    font-size: 1.6rem;
+  }
+  .img-text {
+    padding: 2rem 3rem 2rem 2rem;
+    font-size: 2rem;
+  }
+  .leader-text-box {
+    padding: 2.5rem 0 0 2rem;
+  }
+}
+
+@media (max-width: 42.82em) {
+  html {
+    font-size: 50%;
+  }
+  /* .hide {
+    display: none;
+  } */
+
+  .section-hero {
+    padding: 9.6rem 3rem;
+    padding: 3rem 3rem 9.6rem 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+  }
+  .section-hero .heading-primary {
+    width: 100%;
+    font-size: 5rem;
+    padding: 2rem 3rem;
+  }
+  .margin-btm-lg {
+    margin-bottom: 3rem;
+  }
+
+  .margin-top-lg {
+    margin-top: 20.6rem;
+  }
+
+  .section-leader .grid--2-cols-ed {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-text-box {
+    padding: 0;
+    /* transform: translateX(-35%); */
+    position: static;
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .leader-text-description {
+    font-size: 1.8rem;
+  }
+
+  .section-leader {
+    padding: 6rem 3rem;
+  }
+
+  .section-creation {
+    padding: 6rem 3rem;
+  }
+
+  .creation-header {
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .creation-header .hide {
+    /*btn*/
+    display: none;
+  }
+  .btn-mobile:link,
+  .btn-mobile:visited {
+    display: flex;
+
+    justify-content: center;
+    /* align-items: center; */
+    width: 60%;
+    margin: 3rem auto 3rem auto;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .img-text {
+    font-size: 3rem;
+    padding-right: 20rem;
+  }
+  .footer .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7rem;
+  }
+  .footer .logo {
+    text-align: center;
+  }
+
+  .footer .nav-links {
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 5rem;
+  }
+
+  .icon-box {
+    align-items: center;
+  }
+
+  .menu-icon {
+    color: #fff;
+    font-size: 5rem;
+    display: none;
+  }
+  .menu-icon {
+    color: #fff;
+    font-size: 5rem;
+    display: block;
+    cursor: pointer;
+  }
+
+  /* mobile nav */
+
+  .header {
+    margin-top: 0;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-header {
+    display: block;
+  }
+
+  .nav-header .nav-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    gap: 5rem;
+    text-transform: uppercase;
+    align-items: flex-start;
+  }
+
+  .nav-header {
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    margin-top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+    z-index: 1111;
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .nav-header {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    touch-action: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  /* .nav-open .icon-mobile-nav[name="close-outline"] + .logo {
+    display: none;
+  } */
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  /* up to here */
+
+  .logo-mobile:link,
+  .logo-mobile:visited {
+    display: block;
+    position: absolute;
+    top: 3rem;
+  }
+
+  /* trial */
+  .img {
+    display: none;
+  }
+  .mbl-img {
+    display: block;
+    width: 100%;
+  }
+} ;

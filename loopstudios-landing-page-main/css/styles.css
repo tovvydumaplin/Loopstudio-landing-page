@@ -1,0 +1,258 @@
+.section-hero {
+  padding: 9.6rem 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SECTION LEADER */
+.section-leader {
+  padding: 13rem 3rem;
+}
+
+.leader-img {
+  width: 100%;
+}
+.section-leader .grid {
+  justify-items: center;
+}
+.section-leader .container {
+  position: relative;
+}
+
+.leader-text-box {
+  padding: 13rem 0 0 13rem;
+  /* transform: translateX(-35%); */
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  align-self: end;
+}
+.leader-text-box .heading-secondary {
+  margin-bottom: 3rem;
+}
+
+.leader-text-description {
+  font-family: "Alata", sans-serif;
+  color: #8c8c8c;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  /* margin-top: 9rem; */
+}
+
+/* SECTION CREATION */
+.section-creation {
+  padding: 13rem 3rem;
+}
+
+.creation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.btn-creation:link,
+.btn-creation:visited {
+  font-family: "Alata", sans-serif;
+  font-size: 2rem;
+  color: #000;
+  padding: 1.5rem 6rem;
+  border: 3px solid #8c8c8c;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  transition: all 0.3s;
+}
+.btn-creation:hover,
+.btn-creation:active {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-mobile:link,
+.btn-mobile:visited {
+  display: none;
+}
+.image-box {
+  position: relative;
+}
+.img {
+  display: block;
+  width: 100%;
+  background: linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+}
+
+.container .gallery {
+  gap: 5rem;
+}
+
+.img-text {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding: 4rem 6rem 4rem 5rem;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.01)
+  );
+  /* box-shadow: inset 0 1rem 2rem rgba(0, 0, 0, 0.1); */
+  border: none;
+  width: 100%;
+}
+.xtr-padding {
+  padding-right: 9rem;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 5rem 3rem;
+  background-color: #000000;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: -1.4rem;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  z-index: 1;
+}
+
+.links:link,
+.links:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+/* gumana to dahil si LI ang sinelect ko. Hindi gumagana pag same element lang ang iseselect
+sample is .links:hover > .links::after. Hindi pwede to, research why. */
+li:hover > .links::after {
+  opacity: 1;
+}
+
+.links:hover,
+.links:active {
+  /* border-bottom: 2px solid #fff; */
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5rem;
+}
+.icon {
+  width: 100%;
+}
+
+.icons a {
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.3rem;
+  transition: all 0.3s;
+}
+.icons a:hover {
+  border-bottom: 2px solid #fff;
+}
+.icons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.icons a {
+  display: block;
+}
+
+.logo-box .logo {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 5rem;
+}
+
+.copyright {
+  font-family: "Alata", sans-serif;
+  color: #6d6d6d;
+  font-size: 1.8rem;
+}
+
+.img,
+.img-text {
+  transition: all 0.3s ease-in;
+}
+
+/* .img:hover {
+  filter: opacity(30%);
+}
+
+.img:hover + .img-text {
+  color: #000;
+}
+.img-text {
+  display: block;
+}
+
+.img-text:hover + .img {
+  filter: opacity(30%);
+} */
+
+/* Gumana to dahil yung parent element ang ginamit ko 
+pag ihohover ang image. So sa div image box yan nag hohover, then
+kukunin lang yung value ng child kaya yan gumagana. Kung hindi 
+gagamitin ang parent, hindi uubra at gagana ang code ng tama. */
+.image-box:hover > .img {
+  filter: opacity(30%);
+  cursor: pointer;
+}
+.image-box:hover > .img-text {
+  filter: opacity(100%);
+  color: #000;
+  cursor: pointer;
+  background-image: none;
+}
+
+.image-box:hover > .mbl-img {
+  filter: opacity(30%);
+  cursor: pointer;
+}
+
+/* trial */
+.mbl-img {
+  display: none;
+}
