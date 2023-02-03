@@ -1,5 +1,5 @@
 # Loopstudio-landing-page
 A challenge from Frontendmentor.io. 
 
-Technologies used
+Technologies used:
 HTML + CSS + JS
